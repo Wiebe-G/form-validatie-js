@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form validation</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="top">
+        <button id="dark-mode-knop">Donkere modus</button>
+    </div>
+    <div id="form-div">
+        <form class="form-box" name="form">
+            <h2>Inloggen</h2>
+            <input id="uname" name="uname" type="text" placeholder="Gebruikersnaam" required autofocus>
+            <input id="password" name="password" type="password" placeholder="Wachtwoord" required>
+            <input id="email" type="email" name="email" placeholder="Email">
+            <button type="submit" id="submit">Inloggen</button>
+        </form>
+    </div>
+    <div id="geldigDiv">
+        <p id="geldigP"></p>
+        <p id="sterkteWachtwoord"></p>
+        <p id="emailValid"></p>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>

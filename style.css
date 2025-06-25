@@ -1,0 +1,126 @@
+:root {
+    --hoofd-tekst: rgb(0, 0, 0);
+    --alt-tekst: #000000;
+    --achtergrond: #63e4f7;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    color: var(--tekst);
+    background-color: var(--achtergrond);
+}
+
+.dark {
+    color: #fff;
+    background-color: #000;
+}
+
+.top {
+    background-image: linear-gradient(red, yellow);
+    padding: 0.5%;
+}
+
+#dark-mode-knop {
+    margin-left: 93%;
+}
+
+#form-div {
+    position: absolute;
+    left: 40%;
+    width: max-content;
+    top: 25%;
+    border: 1px solid var(--tekst);
+}
+
+#geldigDiv {
+    position: absolute;
+    right: 20%;
+    top: 35%;
+}
+
+
+
+/* Centraal uitlijnen van het formulier */
+.form-center {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(120deg, #e0eafc 0%, #cfdef3 100%);
+}
+
+/* Formulierbox */
+.form-box {
+    background: #fff;
+    padding: 2.5rem 2rem;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(44, 62, 80, 0.15);
+    width: 100%;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: rgb(0, 0, 0);
+}
+
+/* Titel */
+.form-box h2 {
+    margin: 0 0 1rem 0;
+    text-align: center;
+    color: #2d3436;
+    font-weight: 700;
+}
+
+/* Inputvelden */
+.form-box input[type="text"],
+.form-box input[type="password"],
+.form-box input[type="email"] {
+    padding: 0.7rem 1rem;
+    border: 1.5px solid #b2bec3;
+    border-radius: 8px;
+    font-size: 1rem;
+    background: #f7faff;
+    transition: border 0.2s;
+}
+
+.form-box input:focus {
+    border: 1.5px solid #0984e3;
+    outline: none;
+}
+
+/* Knop */
+.form-box button {
+    padding: 0.7rem 1rem;
+    background: linear-gradient(90deg, #0984e3 60%, #74b9ff 100%);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+}
+
+.form-box button:hover {
+    background: linear-gradient(90deg, #74b9ff 60%, #0984e3 100%);
+    transform: translateY(-2px) scale(1.03);
+}
+
+/* Link onder het formulier */
+.form-box .form-link {
+    text-align: center;
+    font-size: 0.97rem;
+}
+
+.form-box .form-link a {
+    color: #0984e3;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.form-box .form-link a:hover {
+    text-decoration: underline;
+}
